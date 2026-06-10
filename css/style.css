@@ -132,8 +132,13 @@ img {
 .navbar-brand {
   font-weight: 800;
   letter-spacing: -0.03em;
-  color: var(--color-surface) !important;
+  color: #FFFFFF !important;
   font-size: 1.25rem;
+  transition: color var(--transition);
+}
+
+.navbar-brand:hover {
+  color: var(--color-accent) !important;
 }
 
 .navbar .nav-link {
