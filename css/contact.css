@@ -1,0 +1,70 @@
+/* ─── Contact Hero ─── */
+.contact-hero {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-brand));
+  color: #fff;
+}
+
+.contact-hero h1 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* ─── Contact Form ─── */
+.contact-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.contact-form .form-control {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: 0.75rem 1rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  min-height: 44px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.2);
+}
+
+.contact-form textarea.form-control {
+  min-height: auto;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+}
+
+.contact-info-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  height: 100%;
+}
+
+.contact-info-card h3 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+}
+
+.contact-detail span:first-child {
+  font-size: 1.25rem;
+}
+
+#form-alert {
+  border-radius: var(--radius-md);
+}

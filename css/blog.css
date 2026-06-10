@@ -1,0 +1,118 @@
+/* ─── Blog Hero ─── */
+.blog-hero {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-brand));
+  color: #fff;
+}
+
+.blog-hero h1 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* ─── Category Pills ─── */
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.category-pill {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.category-pill:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.category-pill.active {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+/* ─── Blog Grid ─── */
+.blog-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.blog-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.blog-card.hidden {
+  display: none;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-brand);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: var(--spacing-sm);
+}
+
+.blog-card h5 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.blog-meta {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.blog-card .excerpt,
+.blog-card .full-text {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  flex: 1;
+}
+
+.read-more-btn {
+  align-self: flex-start;
+  margin-top: var(--spacing-sm);
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.read-more-btn:hover {
+  background: var(--color-accent);
+  color: #fff;
+}

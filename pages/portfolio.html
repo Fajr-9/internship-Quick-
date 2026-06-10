@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fajr's portfolio — front-end developer skills, projects, and contact information.">
+  <title>Portfolio | Fajr Frontend Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body data-theme="dark">
+  <div id="loader">
+    <div class="loader-spinner" role="status" aria-label="Loading"></div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scrolled">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Fajr Dev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <button id="theme-toggle" type="button" aria-label="Switch to light mode">☀️</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ─── Hero ─── -->
+    <section class="portfolio-hero" aria-label="Profile">
+      <div class="container page-hero-offset">
+        <img src="https://placehold.co/200x200/0F3460/E94560?text=F" alt="Fajr Hilal profile photo" class="profile-image img-fluid animate-on-scroll">
+        <h1 class="animate-on-scroll">Fajr Hilal</h1>
+        <p class="portfolio-title animate-on-scroll">Front-End Developer &amp; UI Enthusiast</p>
+        <div class="social-buttons animate-on-scroll">
+          <a href="https://github.com" class="social-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com" class="social-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:fajr@example.com" class="social-btn">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── About ─── -->
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 animate-on-scroll">
+            <h2 id="about-heading" class="section-title">About Me</h2>
+            <p>I'm a passionate front-end developer focused on building responsive, accessible, and visually polished web experiences. I enjoy turning complex problems into simple, beautiful, and intuitive interfaces.</p>
+            <p class="mb-0">Currently honing my skills in modern HTML, CSS, JavaScript, and React while contributing to real-world projects that make a difference.</p>
+          </div>
+          <div class="col-lg-6 animate-on-scroll">
+            <h3 class="h5 mb-3">Skills &amp; Technologies</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Accessibility</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Skills ─── -->
+    <section class="skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title text-center animate-on-scroll">Technical Skills</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="skill-item animate-on-scroll">
+              <div class="skill-label"><span>HTML</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item animate-on-scroll">
+              <div class="skill-label"><span>CSS</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item animate-on-scroll">
+              <div class="skill-label"><span>Bootstrap</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item animate-on-scroll">
+              <div class="skill-label"><span>JavaScript</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item animate-on-scroll">
+              <div class="skill-label"><span>React</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item animate-on-scroll">
+              <div class="skill-label"><span>Node.js</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Projects ─── -->
+    <section class="projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title text-center animate-on-scroll">Featured Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <article class="project-card animate-on-scroll">
+              <h3>TaskFlow App</h3>
+              <div class="mb-2">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+              <p class="text-muted">A productivity task manager with drag-and-drop, dark mode, and persistent local storage.</p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="project-card animate-on-scroll">
+              <h3>Weather Dashboard</h3>
+              <div class="mb-2">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">API</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
+              <p class="text-muted">Real-time weather app fetching data from OpenWeather API with geolocation support.</p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="project-card animate-on-scroll">
+              <h3>E-Commerce UI</h3>
+              <div class="mb-2">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
+              <p class="text-muted">A responsive product catalog with cart functionality, toast notifications, and clean UI.</p>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="products.html">Live Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Contact ─── -->
+    <section class="portfolio-contact text-center" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title animate-on-scroll">Let's Connect</h2>
+        <div class="d-flex justify-content-center gap-3 animate-on-scroll">
+          <a href="https://github.com" class="contact-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com" class="contact-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a href="mailto:fajr@example.com" class="contact-icon-btn" aria-label="Email">@</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Fajr Frontend Project. Built with HTML5, CSS3, Bootstrap 5 &amp; Vanilla JS</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>
