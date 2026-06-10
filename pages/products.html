@@ -17,27 +17,35 @@
     <div class="loader-spinner" role="status" aria-label="Loading"></div>
   </div>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scrolled">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">Fajr Dev</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-solid" id="main-navbar">
+      <div class="container navbar-container">
+        <a class="navbar-brand" href="../index.html">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span class="brand-text">Fajr Dev</span>
+        </a>
+        <div class="navbar-toolbar">
+          <button class="cart-icon-btn" type="button" aria-label="Shopping cart">
+            🛒
+            <span id="cart-count" class="d-none">0</span>
+          </button>
+          <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Switch to light mode">
+            <span class="theme-icon" aria-hidden="true">☀️</span>
+          </button>
+          <button class="custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
+          <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
             <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item ms-lg-2">
-              <button class="cart-icon-btn" type="button" aria-label="Shopping cart">
-                🛒
-                <span id="cart-count" class="d-none">0</span>
-              </button>
-            </li>
           </ul>
         </div>
       </div>
@@ -59,7 +67,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/1A1A2E/E94560?text=Headphones" alt="Wireless Headphones" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&q=80" alt="Wireless Headphones" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="Wireless Headphones">Wireless Headphones</h3>
                 <p class="text-muted small">Premium noise-cancelling wireless headphones with 30-hour battery life.</p>
@@ -70,7 +78,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/16213E/E94560?text=Keyboard" alt="Mechanical Keyboard" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1511464780069-00b85a0788cf?w=400&h=300&fit=crop&q=80" alt="Mechanical Keyboard" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="Mechanical Keyboard">Mechanical Keyboard</h3>
                 <p class="text-muted small">RGB backlit mechanical keyboard with tactile switches.</p>
@@ -81,7 +89,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/0F3460/E94560?text=USB-C+Hub" alt="USB-C Hub" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1625948515291-69613efd202f?w=400&h=300&fit=crop&q=80" alt="USB-C Hub" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="USB-C Hub">USB-C Hub</h3>
                 <p class="text-muted small">7-in-1 USB-C hub with HDMI, USB 3.0, and SD card reader.</p>
@@ -92,7 +100,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/1A1A2E/FFFFFF?text=Laptop+Stand" alt="Laptop Stand" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop&q=80" alt="Laptop Stand" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="Laptop Stand">Laptop Stand</h3>
                 <p class="text-muted small">Ergonomic aluminum laptop stand with adjustable height.</p>
@@ -103,7 +111,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/16213E/FFFFFF?text=Webcam" alt="Webcam HD" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1587826080696-f245b6e0c9df?w=400&h=300&fit=crop&q=80" alt="Webcam HD" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="Webcam HD">Webcam HD</h3>
                 <p class="text-muted small">1080p HD webcam with built-in microphone and auto-focus.</p>
@@ -114,7 +122,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/0F3460/FFFFFF?text=Mouse+Pad" alt="Mouse Pad XL" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1615663244707-fea90032d940?w=400&h=300&fit=crop&q=80" alt="Mouse Pad XL" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="Mouse Pad XL">Mouse Pad XL</h3>
                 <p class="text-muted small">Extra-large desk mat with smooth surface and stitched edges.</p>
@@ -125,7 +133,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/1A1A2E/E94560?text=Desk+Lamp" alt="LED Desk Lamp" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=300&fit=crop&q=80" alt="LED Desk Lamp" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="LED Desk Lamp">LED Desk Lamp</h3>
                 <p class="text-muted small">Adjustable LED desk lamp with touch controls and USB charging port.</p>
@@ -136,7 +144,7 @@
           </div>
           <div class="col">
             <article class="product-card">
-              <img src="https://placehold.co/400x300/16213E/E94560?text=Monitor+Stand" alt="Monitor Stand" class="img-fluid">
+              <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&h=300&fit=crop&q=80" alt="Monitor Stand" class="img-fluid product-img" loading="lazy" width="400" height="300">
               <div class="product-card-body">
                 <h3 data-name="Monitor Stand">Monitor Stand</h3>
                 <p class="text-muted small">Dual monitor stand with cable management and VESA compatibility.</p>
@@ -151,8 +159,48 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2026 Fajr Frontend Project. Built with HTML5, CSS3, Bootstrap 5 &amp; Vanilla JS</p>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="footer-brand">
+            <span class="brand-mark" aria-hidden="true">F</span>
+            Fajr Dev
+          </a>
+          <p class="footer-tagline">Building modern, responsive web experiences with clean code and thoughtful design.</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h3 class="footer-title">Connect</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mailto:fajr@example.com">Email</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h3 class="footer-title">Follow</h3>
+          <div class="footer-social">
+            <a href="https://github.com/Fajr-9/internship-Quick-" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:fajr@example.com" class="footer-social-link" aria-label="Email">@</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Fajr Dev. All rights reserved.</span>
+        <span>HTML5 · CSS3 · Bootstrap 5 · JavaScript</span>
+      </div>
     </div>
   </footer>
 

@@ -17,24 +17,31 @@
     <div class="loader-spinner" role="status" aria-label="Loading"></div>
   </div>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scrolled">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">Fajr Dev</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-solid" id="main-navbar">
+      <div class="container navbar-container">
+        <a class="navbar-brand" href="../index.html">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span class="brand-text">Fajr Dev</span>
+        </a>
+        <div class="navbar-toolbar">
+          <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Switch to light mode">
+            <span class="theme-icon" aria-hidden="true">☀️</span>
+          </button>
+          <button class="custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
+          <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
             <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item ms-lg-2">
-              <button id="theme-toggle" type="button" aria-label="Switch to light mode">☀️</button>
-            </li>
           </ul>
         </div>
       </div>
@@ -187,8 +194,48 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2026 Fajr Frontend Project. Built with HTML5, CSS3, Bootstrap 5 &amp; Vanilla JS</p>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="../index.html" class="footer-brand">
+            <span class="brand-mark" aria-hidden="true">F</span>
+            Fajr Dev
+          </a>
+          <p class="footer-tagline">Building modern, responsive web experiences with clean code and thoughtful design.</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h3 class="footer-title">Connect</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mailto:fajr@example.com">Email</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h3 class="footer-title">Follow</h3>
+          <div class="footer-social">
+            <a href="https://github.com/Fajr-9/internship-Quick-" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:fajr@example.com" class="footer-social-link" aria-label="Email">@</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Fajr Dev. All rights reserved.</span>
+        <span>HTML5 · CSS3 · Bootstrap 5 · JavaScript</span>
+      </div>
     </div>
   </footer>
 
