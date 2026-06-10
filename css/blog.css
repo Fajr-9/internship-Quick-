@@ -56,7 +56,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: var(--color-text);
   transition: transform var(--transition), box-shadow var(--transition);
+}
+
+body[data-theme='dark'] .blog-card h5 {
+  color: var(--color-silver);
 }
 
 .blog-card:hover {

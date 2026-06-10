@@ -9,6 +9,8 @@
   --color-border: #E2E8F0;
   --color-text: #1E293B;
   --color-muted: #64748B;
+  --color-silver: #D4D4DC;
+  --color-silver-muted: #A8A8B8;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius-md: 12px;
@@ -26,8 +28,10 @@ body[data-theme='dark'] {
   --color-bg: #0D0D1A;
   --color-surface: #1A1A2E;
   --color-border: #2D2D44;
-  --color-text: #F1F5F9;
-  --color-muted: #94A3B8;
+  --color-text: #D4D4DC;
+  --color-muted: #A8A8B8;
+  --color-silver: #E2E2EA;
+  --color-silver-muted: #B0B0BE;
 }
 
 /* ─── Base ─── */
@@ -64,6 +68,25 @@ h6 {
 
 h1 {
   font-weight: 800;
+}
+
+body[data-theme='dark'] h1,
+body[data-theme='dark'] h2,
+body[data-theme='dark'] h3,
+body[data-theme='dark'] h4,
+body[data-theme='dark'] h5,
+body[data-theme='dark'] h6 {
+  color: var(--color-silver);
+}
+
+body[data-theme='dark'] p,
+body[data-theme='dark'] li,
+body[data-theme='dark'] label {
+  color: var(--color-text);
+}
+
+body[data-theme='dark'] .text-muted {
+  color: var(--color-silver-muted) !important;
 }
 
 main {
@@ -182,6 +205,14 @@ body[data-theme='light'] .glass-card {
   border-color: var(--color-border);
 }
 
+body[data-theme='dark'] .glass-card {
+  color: var(--color-text);
+}
+
+body[data-theme='dark'] .glass-card h3 {
+  color: var(--color-silver);
+}
+
 .glass-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -293,13 +324,13 @@ body[data-theme='light'] .glass-card {
 /* ─── Footer ─── */
 .site-footer {
   background-color: var(--color-primary);
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-silver-muted);
   padding: var(--spacing-lg) 0;
   margin-top: auto;
 }
 
 .site-footer a {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-silver);
   transition: color var(--transition);
 }
 
@@ -378,7 +409,12 @@ body[data-theme='light'] .glass-card {
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: var(--color-text);
   transition: transform var(--transition), box-shadow var(--transition);
+}
+
+body[data-theme='dark'] .page-card h3 {
+  color: var(--color-silver);
 }
 
 .page-card:hover {

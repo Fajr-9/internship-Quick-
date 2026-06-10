@@ -33,7 +33,7 @@
 .display-expression {
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  color: var(--color-muted);
+  color: var(--color-silver-muted);
   min-height: 1.25rem;
   word-break: break-all;
 }
